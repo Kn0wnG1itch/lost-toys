@@ -1,53 +1,34 @@
-# Lost Toys
+# Lost Toys - Early Development Branch
 
-Welcome to **Lost Toys**, a Minecraft mod that brings together whimsical and mystical elements, introducing new blocks, tools, and mechanics inspired by magical utilities and forgotten features from older versions of Minecraft. If you've ever missed some of the unique elements from Minecraft 1.12.2 or wished certain features were implemented differently, this is the mod for you!
+This `early-dev` branch is a temporary workspace for experimenting with major changes to the statue handling system, specifically focusing on using summoned entities for rendering.
 
-## Features
+**Purpose:**
 
-### Key Features:
-- **Crazy Magic:** A simple magic way that allows you to turn entities into statues or force monsters to run from a bottle of sunshine!
-- **Mystical Blocks:** Rediscover and craft blocks like the "Barrierstone" inspired by Thaumcraft 1.12.2, bringing both functionality and aesthetics.
-- **Forgotten Utilities:** Adding back fun, old mechanics that either never made it into newer versions or that you never quite got enough of.
-- **New Building Blocks:** Simple, unique blocks designed to work in your magical and mysterious builds.
-- **Fun & Light Mechanics:** Features that enhance the Minecraft experience, focusing on creativity and exploration.
+* To test and develop the new summoned entity rendering logic for statues.
+* To isolate these significant changes from the main `master` (or `main`) branch.
+* To provide a safe space for experimentation and iteration.
 
-### Planned Features:
-- Magic-based tools and items
-- Customizable potion effects and enchantments
-- More magical blocks and entities for creative use
-- Tweaks to existing mechanics to bring new possibilities to Minecraft gameplay
+**Current Focus:**
 
-## Installation
+* Implementing the summoning of dummy entities at the statue's location.
+* Applying visual NBT data to the dummy entities.
+* Disabling AI and external interactions for the dummy entities.
+* Rendering the dummy entities in the `StatueBlockRenderer`.
+* Managing the lifecycle of the summoned entities using a map.
 
-### Requirements:
-- Minecraft 1.20.1+
-- Forge for 1.20.1/NeoForge for later versions
+**How to Use This Branch:**
 
-### Steps:
-1. Download the latest version of **Lost Toys** from the releases page.
-2. Ensure you have a Minecraft Modloader(NeoForge most likely) installed.
-3. Drop the **Lost Toys** `.jar` file into your `mods` folder.
-4. Launch Minecraft using the Forge profile.
-5. Enjoy the magic, blocks, and utilities!
+* This branch is primarily for internal development and testing.
+* Changes made here may be unstable or incomplete.
+* Do not expect a fully functional mod on this branch.
+* Commits will be frequent and may not follow strict commit message conventions.
 
-## Contributing
+**Future Plans:**
 
-We welcome contributions to **Lost Toys**! If you have an idea for a new feature, bug fix, or improvement, feel free to open an issue or submit a pull request. To contribute:
+* Once the summoned entity rendering logic is stable, this branch may be merged into the main branch.
+* The structure of this branch may evolve into a more formal development branch as the mod progresses.
 
-1. Fork the repository.
-2. Create a branch for your feature/bugfix.
-3. Commit your changes.
-4. Push to your fork.
-5. Create a pull request.
+**Note:**
 
-## License
-
-This mod is licensed under the [MIT License](LICENSE).
-
-## Support
-
-If you encounter any issues with **Lost Toys**, feel free to open an issue in the GitHub repository, and we’ll do our best to resolve it!
-
----
-
-Enjoy rediscovering the lost wonders of Minecraft with **Lost Toys**!
+* This branch is intended for rapid prototyping and should not be used for production or stable releases.
+* Please refer to the main branch's `README.md` for information about the mod's features, installation, and usage.
